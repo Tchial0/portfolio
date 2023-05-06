@@ -59,11 +59,11 @@
 
 /* text css above hero image*/
 .hero-title {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .hero-desc {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .hero-text {
@@ -76,5 +76,5 @@
 }
 
 .navbarScroll.navbarDark {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
 }
