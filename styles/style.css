@@ -1,0 +1,51 @@
+.presentation-board {
+    animation-delay: 3s;
+    animation-name: anim-presentation-board;
+    animation-duration: .5s;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    z-index: 999;
+}
+.first-name {
+    color: dodgerblue;
+    animation-name: anim-first-name;
+    animation-duration: 2s;
+    animation-play-state: running;
+}
+
+.last-name {
+    animation-delay: 1s;
+    animation-name: anim-last-name;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-fill-mode: both;
+}
+
+.presentation-line {
+    background: linear-gradient(to right,dodgerblue, white);
+    height: 1px;
+    animation-name: anim-presentation-line;
+    animation-play-state: running;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0.5;
+}
+
+.text-rotate {
+    animation-name: anim-rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+.text-blue {
+    color: dodgerblue;
+}
+
+.hover-link:hover {
+  text-shadow: 0 0 10px white;
+}

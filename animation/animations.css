@@ -1,0 +1,53 @@
+@keyframes anim-presentation-board {
+    from {
+        display: fixed;
+        opacity: 1;
+        z-index: 999;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes anim-first-name {
+    from{
+       transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+       
+    }
+}
+
+@keyframes anim-last-name {
+    from{
+        opacity: 0;
+       transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anim-presentation-line {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(100%);
+       
+    }
+}
+
+@keyframes anim-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+       transform: rotate(360deg);
+    }
+}
