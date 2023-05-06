@@ -19,7 +19,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbarScroll">
+    <nav class="navbar navbar-dark shadow-lg navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
             <a class="navbar-brand" href="#"><span class="fs-6"><span class="text-blue px-2"><i
                             class="bi-star px-1 text-rotate d-inline-block"></i> CHIALO</span><span
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link hover-link" href="#home">HOME</a>
+                        <a class="nav-link text-white hover-link" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-link" href="#about">ABOUT</a>
+                        <a class="nav-link text-white hover-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-link" href="#services">PROJECTS</a>
+                        <a class="nav-link text-white hover-link" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-link" href="#contact">CONTACT</a>
+                        <a class="nav-link text-white hover-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
 
@@ -55,8 +55,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero-title"><span class="text-blue d-block d-md-inline">Hello!</span> TREAT ME AS <span
-                            class="text-muted">TCHIALO</span></h2>
+                    <h6 class="hero-title"><span class="text-blue d-block d-md-inline">Hello!</span> TREAT ME AS <span
+                            class="text-muted">TCHIALO</span></h6>
                     <p class="hero-desc">
                         I AM .NET DEVEL<small class="bi-circle px-1 text-blue"></small>PER FOCUSED IN BACK-END/<span
                             class="text-muted">DESKTOP</span> DEVELOPMENT WITH <b class="text-blue">C <span
@@ -73,7 +73,7 @@
             <h3 class="display-6"># ABOUT ME</h3>
             <hr />
             <div class="row mt-4">
-                <div class="col-lg-4 shadow-sm p-2">
+                <div class="col-lg-4 p-2">
                     <img src="./images/tchialo.jpg" class="img-fluid rounded" alt="My Picture">
                 </div>
 
@@ -83,7 +83,8 @@
                         The first time my father gave me a computer I did not sleep for at least 2 days, I got so amazed
                         that I wanted so much to discover how those windows and buttons where created, how folders
                         reacted to my clicks so fast. After some researches I found
-                        the answer: there was something called programming. Since there I am stuck to programming.</p>
+                        the answer: there was something called programming. Since there I am stuck to programming.
+                    </p>
                     <p>
                         I an <b>innovative</b> .NET Developer with hands-on experience designing, testing, and
                         maintaining .NET
@@ -94,17 +95,91 @@
                     </p>
                     <p>
                         Well, I don't know why but I have always been in love with programming languages with names that
-                        start with 'C' (C, and C#, I avoid C++) - just like my name. Currently C is apart, C# is now the only language in my heart.
+                        start with 'C' (C, and C#, I avoid C++) - just like my name. Currently C is apart, C# is now the
+                        only language in my heart.
                     </p>
                     <div class="border rounded p-3">
                         <h6><i class="bi-stars"></i> Relevant Skills</h6>
                         <p>
-                            C# • .NET • Entity Framework Core • ASP.NET • Clean Architecture • SOLID • Domain Driven Design
+                            C# • .NET • Entity Framework Core • ASP.NET • Clean Architecture • SOLID • Domain Driven
+                            Design
                         </p>
                     </div>
                 </div>
             </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container mt-4 pt-4">
+            <h3 class="display-6"># PROJECTS</h3>
+            <hr />
+            <div class="row">
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card shadow">
+                        <img src="./images/fstock.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Fstock</h5>
+                            <p class="card-text">Inventory and products salles management system, is also a billing
+                                software.</p>
+                            <a href="https://tchial0.github.io/fstockinf/" class="btn btn-secondary">View Info Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card shadow">
+                        <img src="./images/andamanga.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">AndaManga</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a target="_blank" href="https://tchial0.github.io/fstockinf/"
+                                class="btn btn-secondary">Visualize</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card shadow">
+                        <img src="./images/scg.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Card Generator</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="mailto:tchialo.crocodile@gmail.com" class="btn btn-secondary">Ask me about</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+
+                            <h4 class="card-title mt-3"><i class='bi-box'></i> MyExcel</h4>
+                            <p class="card-text mt-3">An open-source library do read/write excel files. It is available
+                                on <a target="_blank" href="https://www.nuget.org/packages/MyExcel">nuget.org</a>.
+                            </p>
+                            <a href="https://github.com/Tchial0/myexcel" class="btn btn-secondary">Github Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="contact" class="mt-5 bg-black text-white">
+        <div class="container p-5">
+            <div class="mt-4 text-center">
+                <a href="https://www.linkedin.com/in/tchial0" target="_blank" class="text-white fs-3 me-2"><i class="bi-linkedin"></i></a> 
+                <a href="https://www.github.com/tchial0" target="_blank" class="text-white fs-3"><i class="bi-github"></i></a>
+            </div>
+            <hr/>
+            <p class="text-center">© Copyright 2023. Made by Chialo Armando</p>
+        </div>
+    </footer>
 
     <!-- Presentation -->
     <section
