@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chialo Armando</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -12,57 +13,82 @@
     <link rel="stylesheet" href="./animation/animations.css">
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Chialo Armando</title>
 </head>
 
-<body>
+<body class="bg-default">
+
+    <!-- Offcanvas -->
+    <div class="offcanvas d-md-none offcanvas-end bg-default" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div></div>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link" href="#about">About</a>
+                </li>
+                <li class="nav-item mb-3">
+                    <a class="nav-link hover-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a class="nav-link hover-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="link-button" href="#contact">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-dark shadow-lg navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#"><span class="fs-6"><span class="text-blue px-2"><i
-                            class="bi-star px-1 text-rotate d-inline-block"></i> CHIALO</span><span
-                        class="text-white">ARMANDO</span></span></a>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top backdrop">
+        <div class="container-fluid px-3 px-md-5 py-3">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a href="#" class="inline-block logo d-flex justify-content-center align-items-center">
+                <div class="text-green fs-6">C</div>
+            </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
+            <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item active">
-                        <a class="nav-link text-white hover-link" href="#home">HOME</a>
+                        <a class="nav-link hover-link" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white hover-link" href="#about">ABOUT</a>
+                    <li class="nav-item ms-md-2">
+                        <a class="nav-link hover-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white hover-link" href="#projects">PROJECTS</a>
+                    <li class="nav-item  ms-2">
+                        <a class="nav-link hover-link" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white hover-link" href="#contact">CONTACT</a>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link hover-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="link-button" href="#contact">Resume</a>
                     </li>
                 </ul>
-
             </div>
+
+
         </div>
     </nav>
 
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h6 class="hero-title"><span class="text-blue d-block d-md-inline">Hello!</span> TREAT ME AS <span
-                            class="text-muted">TCHIALO</span></h6>
-                    <p class="hero-desc">
-                        I AM .NET DEVEL<small class="bi-circle px-1 text-blue"></small>PER FOCUSED IN BACK-END/<span
-                            class="text-muted">DESKTOP</span> DEVELOPMENT WITH <b class="text-blue">C <span
-                                class="d-inline-block text-rotate">#</span></b>
-                    </p>
-                </div>
-            </div>
+    <!-- Introduction -->
+    <section id="home" style="margin-top: 150px;">
+        <div class="container">
+            <div class="mb-2"><span class="text-green fs-6">Hello! My name is</span></div>
+            <h1>Chialo Armando.</h1>
+            <p>
+                I AM .NET DEVEL<small class="bi-circle px-1 text-green"></small>PER FOCUSED IN BACK-END/<span
+                    class="text-muted">DESKTOP</span> DEVELOPMENT WITH <span class="text-green">C#</span>.
+            </p>
         </div>
     </section>
 
@@ -192,7 +218,7 @@
 
     <!-- Presentation -->
     <section
-        class="presentation-board position-fixed bg-dark top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+        class="presentation-board bg-default position-fixed top-0 w-100 h-100 d-flex justify-content-center align-items-center">
         <div>
             <div class="first-name me-3 d-inline-block"><span class="display-4">CHIALO</span></div>
             <div class="last-name d-inline-block"><span class="text-white display-4">ARMANDO</span></div>

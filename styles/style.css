@@ -1,3 +1,37 @@
+
+:root {
+    --green:#59E3C5;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; 
+    --dark-blue : #0A192F;
+}
+
+body {
+    font-size: 15px;
+    color: #CCD6F6;
+}
+
+.bg-default {
+    background: var(--dark-blue);
+}
+
+.backdrop {
+    backdrop-filter: blur(6px);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo {
+    border-radius: 100%;
+    border: 3px solid var(--green);
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 4px var(--green);
+}
+
+
+
 .presentation-board {
     animation-delay: 3s;
     animation-name: anim-presentation-board;
@@ -33,48 +67,37 @@
     opacity: 0.5;
 }
 
-.text-rotate {
-    animation-name: anim-rotate;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-play-state: running;
-    animation-timing-function: linear;
-}
 
-.text-blue {
-    color: dodgerblue;
+.text-green {
+    color: var(--green);
 }
 
 .hover-link:hover {
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 10px var(--green);
+  color: var(--green);
 }
 
-.bgimage {
-    height:100vh;
-    background: url('../images/background.jpg');
-    background-size:cover;
-    position:relative;
+.nav-link {
+    color: #CCD6F6;
+    font-family: var(--font-mono);
+    font-size: 13px;
 }
 
-/* text css above hero image*/
-.hero-title {
-    font-size: 2rem;
+.nav-link::before {
+    content: "0" counter(item) ". ";
+    color: var(--green);
 }
 
-.hero-desc {
-    font-size: 1.5rem;
+.link-button {
+    border: 1px solid var(--green);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    transition: all .5s;
+}
+.link-button:hover{
+    color: var(--dark-blue);
+    background-color: var(--green);
 }
 
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.navbarScroll.navbarDark {
-    background-color: rgba(0, 0, 0, 0.7);
-}
