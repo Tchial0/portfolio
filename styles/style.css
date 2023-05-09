@@ -1,8 +1,7 @@
-
 :root {
-    --green:#59E3C5;
-    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; 
-    --dark-blue : #0A192F;
+    --green: #59E3C5;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --dark-blue: #0A192F;
 }
 
 body {
@@ -10,12 +9,16 @@ body {
     color: #CCD6F6;
 }
 
+.ff-mono {
+    font-family: var(--font-mono);
+}
+
 .bg-default {
     background: var(--dark-blue);
 }
 
 .backdrop {
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
 }
 
 a {
@@ -30,8 +33,6 @@ a {
     box-shadow: 0px 0px 4px var(--green);
 }
 
-
-
 .presentation-board {
     animation-delay: 3s;
     animation-name: anim-presentation-board;
@@ -41,8 +42,9 @@ a {
     animation-fill-mode: forwards;
     z-index: 2000;
 }
+
+/* Presentation Start */
 .first-name {
-    color: dodgerblue;
     animation-name: anim-first-name;
     animation-duration: 2s;
     animation-play-state: running;
@@ -57,7 +59,7 @@ a {
 }
 
 .presentation-line {
-    background: linear-gradient(to right,dodgerblue, white);
+    background: linear-gradient(to right, var(--green), white);
     height: 1px;
     animation-name: anim-presentation-line;
     animation-play-state: running;
@@ -67,14 +69,15 @@ a {
     opacity: 0.5;
 }
 
+/* Presentaion End */
 
 .text-green {
     color: var(--green);
 }
 
 .hover-link:hover {
-  text-shadow: 0 0 10px var(--green);
-  color: var(--green);
+    text-shadow: 0 0 10px var(--green);
+    color: var(--green);
 }
 
 .nav-link {
@@ -96,8 +99,123 @@ a {
     font-family: var(--font-mono);
     transition: all .5s;
 }
-.link-button:hover{
+
+.link-button:hover {
     color: var(--dark-blue);
     background-color: var(--green);
 }
 
+.fader-container {
+    position: relative;
+}
+
+.fader-container .fader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #59e3c56f;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.fader-container:hover .fader {
+    opacity: 0;
+
+}
+
+#home {
+    height: 100vh;
+}
+
+.heading {
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+.numbered-heading {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, 32px);
+    white-space: nowrap;
+}
+
+.numbered-heading::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(16px,3vw,20px);
+    font-weight: 400;
+}
+
+.numbered-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #233554;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.list-networks li a {
+    color: inherit;
+    transition: all .5s;
+}
+
+.list-networks li:hover {
+    transform: translateY(-3px);
+    transition: all .5s;
+}
+
+.list-networks::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #CCD6F6;
+    box-shadow: 0px 0px 1px #CCD6F6;
+}
+
+ul.skills {
+    padding: 0;
+}
+
+ul.skills li {
+    font-size: 13px;
+    font-family: var(--font-mono);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+ul.skills li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: var(--green);
+    font-size: 14;
+    line-height: 12px;
+}
