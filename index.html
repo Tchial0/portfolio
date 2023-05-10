@@ -27,23 +27,43 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item mb-3">
-                    <a class="nav-link hover-link" href="#home">Home</a>
+                    <a class="nav-link hover-link fs-4" href="#home">Home</a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a class="nav-link hover-link" href="#about">About</a>
+                    <a class="nav-link hover-link fs-4" href="#about">About</a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a class="nav-link hover-link" href="#projects">Projects</a>
+                    <a class="nav-link hover-link fs-4" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item mb-4">
-                    <a class="nav-link hover-link" href="#contact">Contact</a>
+                    <a class="nav-link hover-link fs-4" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="link-button" href="#contact">Resume</a>
+                    <a class="link-button" href="#contact">Download Resume</a>
                 </li>
             </ul>
         </div>
     </div>
+
+    <!-- Social Networks Links -->
+    <section class="position-fixed bottom-0 d-none d-md-block">
+        <ul class="list-networks">
+            <li class="pb-3"><a class="hover-link" href="https://www.github.com/tchial0"><i class="bi-github"></i></a></li>
+            <li class="pb-3"><a class="hover-link" href="https://www.linkedin.com/in/tchial0"><i class="bi-linkedin"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Email -->
+    <section class="position-fixed end-0 bottom-0 d-none d-md-block" style="padding-right: 2rem;">
+        <div class="d-flex justify-content-center align-items-center position-relative" style="flex-direction: column;">
+        </div>
+        <ul class="list-networks">
+            <li class="mb-3">
+                <a class="hover-link ff-mono" style="writing-mode: vertical-rl;font-size: 12px;"
+                    href="mailto:tchia.crocodile@gmail.com">tchialo.crocodile@gmail.com</a>
+            </li>
+        </ul>
+    </section>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark navbar-expand-md fixed-top backdrop">
@@ -80,50 +100,30 @@
         </div>
     </nav>
 
-    <!-- Social Networks Links -->
-    <section class="position-fixed bottom-0 d-none d-md-block">
-        <ul class="list-networks">
-            <li class="pb-3"><a class="hover-link" href="#"><i class="bi-github fs-5"></i></a></li>
-            <li class="pb-3"><a class="hover-link" href="#"><i class="bi-linkedin fs-5"></i></a></li>
-        </ul>
-    </section>
-
-    <!-- Email -->
-    <section class="position-fixed end-0 bottom-0 d-none d-md-block" style="padding-right: 2rem;">
-        <div class="d-flex justify-content-center align-items-center position-relative" style="flex-direction: column;">
-        </div>
-        <ul class="list-networks">
-            <li class="mb-3">
-                <a class="hover-link" style="writing-mode: vertical-rl;"
-                    href="mailto:tchia.crocodile@gmail.com">tchialo.crocodile@gmail.com</a>
-            </li>
-        </ul>
-    </section>
-
     <main class="container px-4 px-md-5">
         <!-- Introduction -->
         <section id="home" style="padding-top: 140px;">
             <div class="container">
-                    <div class="mb-3 ps-2"><span class="text-green fs-6 ff-mono">Hi, my name is</span></div>
-                    <div class="heading big-heading">Chialo Armando.</div>
-                    <div class="heading big-heading opacity-50">'Let's code a little bit.'</div>
-                    <div class="mt-5">
-                        <p>
-                            I'm a .Net Devel<small class="bi-circle px-1 text-green"></small>per focused mainly in
-                            Back-End
-                            and Desktop development with <span class="text-green">C#</span> and the .Net Infrastructure.
-                        </p>
-                        <p class="mt-5">
-                            <a class="link-button" href="#contact">Download my resume</a>
-                        </p>
-                    </div>
+                <div class="mb-3 ps-2"><span class="text-green fs-6 ff-mono">Hi, my name is</span></div>
+                <div class="heading big-heading">Chialo Armando.</div>
+                <div class="heading big-heading opacity-50">'Let's code a little bit.'</div>
+                <div class="mt-5">
+                    <p>
+                        I'm a .Net Developer focused mainly in
+                        Back-End
+                        and Desktop (I can mess with Front-End also 😒) development with <span class="text-green">C#</span> and the .Net Infrastructure.
+                    </p>
+                    <p class="mt-5">
+                        <a class="link-button" href="#contact">Download my resume</a>
+                    </p>
+                </div>
             </div>
 
         </section>
 
         <!-- About Section-->
         <section id="about">
-            <div class="container mt-4 pt-4">
+            <div class="container">
 
                 <div class="row">
                     <div class="col-md-8 ps-md-5">
@@ -132,20 +132,21 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-8 ps-md-5">
+                    <div class="col-md-8 ps-md-5 pe-md-5">
                         <p>
-                            The <i class="bi-play"></i> first time my father gave me a computer I did not sleep for at
+                            The first time my father gave me a computer I did not sleep for at
                             least 2 days, I got so amazed
                             that I wanted so much to discover how those windows and buttons where created, how folders
                             reacted to my clicks so fast. After some researches I found
                             the answer: there was something called programming. Since there I am stuck to programming.
                         </p>
                         <p>
-                            I an <b>innovative</b> .NET Developer with hands-on experience designing, testing, and
-                            maintaining .NET
-                            applications. Proven skills in refactoring projects that lack of design patterns and clean
+                            Now I am innovative .NET Developer with hands-on experience designing, testing, and
+                            maintaining .NET applications. I have proven skills in refactoring projects that lack of
+                            design patterns and clean
                             architecture, improving the whole programming process. Passionate about software development
-                            principles (<em>thanks to Rober C. Martin</em>). As an eternal learner I'm always willing to
+                            principles (<em>thanks to Rober C. Martin, I really appreciat his books</em>). As an eternal
+                            learner I'm always willing to
                             learn new technologies.
                         </p>
                         <p>
@@ -156,7 +157,7 @@
                             only language in my heart.
                         </p>
                         <div class="p-2">
-                            <h6 class="py-2"><i class="bi-stars"></i> Relevant Skills</h6>
+                            <p class="py-3">Some of my skills:</p>
                             <div class="row">
                                 <div class="col">
                                     <ul class="skills position-relative">
@@ -172,6 +173,13 @@
                                         <li>Domain Driven Design</li>
                                     </ul>
                                 </div>
+                                <div class="col">
+                                    <ul class="skills position-relative">
+                                        <li>Dapper-ORM</li>
+                                        <li>MySQL</li>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -179,6 +187,7 @@
                     <div class="col-md-4 d-flex d-md-block justify-content-center align-items-center pt-4 pt-md-0">
                         <div class="fader-container" style="max-width: 300px; max-height: 300px;">
                             <div class="fader rounded"></div>
+                            <div class="img-back-border rounded"></div>
                             <img src="./images/tchialo.jpg" class="img-fluid rounded" alt="My Picture">
                         </div>
                     </div>
@@ -186,96 +195,170 @@
                 </div>
         </section>
 
+        <div class="my-5 py-5"> </div>
+
         <!-- Projects Section -->
         <section id="projects">
             <div class="container mt-4 pt-4">
-                <h3 class="display-6"># PROJECTS</h3>
-                <hr />
+
                 <div class="row">
-
-                    <div class="col-lg-4 mt-4">
-                        <div class="card shadow">
-                            <img src="./images/fstock.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Fstock</h5>
-                                <p class="card-text">Inventory and products salles management system, is also a billing
-                                    software.</p>
-                                <a href="https://tchial0.github.io/fstockinf/" class="btn btn-secondary">View Info
-                                    Site</a>
-                            </div>
-                        </div>
+                    <div class="col-md-8 ps-md-5">
+                        <h2 class="numbered-heading heading">Projects</h2>
                     </div>
+                </div>
 
-                    <div class="col-lg-4 mt-4">
-                        <div class="card shadow">
-                            <img src="./images/andamanga.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">AndaManga</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a target="_blank" href="https://tchial0.github.io/fstockinf/"
-                                    class="btn btn-secondary">Visualize</a>
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content text-md-end ms-md-auto">
+                                <p class="project-overline">Project</p>
+                                <h3 class="project-title">Fstock</h3>
+                                <div class="project-description">
+                                    <p>
+                                        Inventory and products salles management system, is also a billing software. Intended to be use by small and medium-sized business.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>WinForms</li>
+                                    <li>Guna UI</li>
+                                    <li>Bunifu</li>
+                                    <li>EF Core</li>
+                                    <li>MySQL</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono" href="https://www.tchial0.github.io/fstockinf">View Info Site</bi></a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mt-4">
-                        <div class="card shadow">
-                            <img src="./images/scg.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Student Card Generator</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="mailto:tchialo.crocodile@gmail.com" class="btn btn-secondary">Ask me about</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mt-4">
-                        <div class="card shadow">
-                            <div class="card-body">
-
-                                <h4 class="card-title mt-3"><i class='bi-box'></i> MyExcel</h4>
-                                <p class="card-text mt-3">An open-source library do read/write excel files. It is
-                                    available
-                                    on <a target="_blank" href="https://www.nuget.org/packages/MyExcel">nuget.org</a>.
-                                </p>
-                                <a href="https://github.com/Tchial0/myexcel" class="btn btn-secondary">Github
-                                    Repository</a>
+                            <div class="fader-container position-absolute top-50 start-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/fstock.png" class="img-fluid rounded">
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content">
+                                <p class="project-overline">Project</p>
+                                <h3 class="project-title">Student Card Generator (SCG)</h3>
+                                <div class="project-description">
+                                    <p>
+                                        A software that generates automatically students cards. It was designed for a national high-school in Angola.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>WinForms</li>
+                                    <li>Guna UI</li>
+                                    <li>Bunifu</li>
+                                    <li>Dapper-ORM</li>
+                                    <li>SQLite</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono" href="mailto:tchialo.crocodile@gmail.com">Ask me about</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 end-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/scg.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content text-md-end ms-md-auto">
+                                <p class="project-overline">Project</p>
+                                <h3 class="project-title">AndManga</h3>
+                                <div class="project-description">
+                                    <p>
+                                        A model of a site to read manga online.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>HTML 5</li>
+                                    <li>CSS 3</li>
+                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono me-3" href="https://www.tchial0.github.io/andmanga">Visualize</bi></a>
+                                    <a class="hover-link ff-mono" href="https://www.github.com/tchial0/andmanga">Repository</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 start-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/andamanga.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-project">
+                    <div class="col ps-md-5 pe-md-5">
+                        <div class="project position-relative">
+                            <div class="project-content">
+                                <p class="project-overline">Project</p>
+                                <h3 class="project-title">MyExcel</h3>
+                                <div class="project-description">
+                                    <p>
+                                        A nuget pacakge to read and write excel files very simply. Reading and writing excel files never got that easy. Completely written in C# 👌.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>.NET Standard 2.0</li>
+                                    <li>C#</li>
+                                    <li>Microsoft Office Interop</li>
+                                </ul>
+                                <div class="project-links pe-md-2">
+                                    <a class="hover-link ff-mono me-3" href="https://www.nuget.org/MyExcel">Nuget Package</bi></a>
+                                    <a class="hover-link ff-mono" href="https://www.github.com/tchial0/myexcel">Repository</bi></a>
+                                </div>
+                            </div>
+                            <div class="fader-container position-absolute top-50 end-0 translate-middle-y">
+                                <div class="fader rounded"></div>
+                                <img src="./images/myexcel.png" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div class="my-5 py-5"> </div>
+
+        <section id="contact">
+            <div class="container text-center">
+                <p class="text-green">And now 😶?</p>
+                <div class="heading big-heading fs-1">Get In Touch</div>
+                <p class="py-4">
+                    Would you like to tell me something?
+                </p>
+                <p>
+                    <a class="link-button p-3" href="mailto:tchialo.crocodile@gmail.com">Say Hello</a>
+                </p>
             </div>
         </section>
     </main>
 
-
     <!-- footer section-->
-    <footer id="contact" class="mt-5 bg-black text-white">
-        <div class="container p-5">
-            <div class="row">
-
-                <div class="col">
-                    <h6>CHIALO ADOLFO ARMANDO</h6>
-                    <p class="text-muted">Thanks for visting my portfolio.</p>
-                </div>
-
-                <div class="col text-end">
-                    <a href="https://www.linkedin.com/in/tchial0" target="_blank" class="text-white fs-3 me-2"><i
-                            class="bi-linkedin"></i></a>
-                    <a href="https://www.github.com/tchial0" target="_blank" class="text-white fs-3"><i
-                            class="bi-github"></i></a>
-                </div>
-            </div>
-            <hr />
-            <p class="text-center">© Copyright 2023</p>
+    <footer style="padding-top: 200px;">
+        <div class="text-center d-md-none pb-4">
+            <a class="hover-link pe-3" href="#"><i class="bi-github fs-5"></i></a>
+            <a class="hover-link" href="#"><i class="bi-linkedin fs-5"></i></a>
+            </ul>
+        </div>
+        <div class="text-center pb-3">
+            <p class="ff-mono "><small><a class="hover-link" href="https://www.github.com/tchial0/portfolio/">Built by
+                        Chialo Armando</a></small></p>
         </div>
     </footer>
 
-    <!-- Presentation -->
+    <!-- Presentation 
     <section
         class="presentation-board bg-default position-fixed top-0 w-100 h-100 d-flex justify-content-center align-items-center">
         <div>
@@ -285,7 +368,7 @@
             <div class="text-center p-3"><span class="display-6 text-muted">WELCOME!</span></div>
         </div>
 
-    </section>
+    </section> -->
 
     <script src="./scripts/script.js"></script>
 </body>
